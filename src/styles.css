@@ -1,0 +1,83 @@
+/* Color theme
+https://colorhunt.co/palette/161a3031304db6bbc4f0ece5
+ */
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: #161A30;
+  color: white;
+}
+
+.lightSection {
+  background-color: #F0ECE5;
+  color: #161A30;
+}
+
+.secondaryHeader{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+/* ############# */
+/* Home section */
+/* ############# */
+#mainHeader{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+  #home{
+    height: 500px;
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 2px 15px 0px rgba(240, 236, 229, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 15px 15px 0px rgba(240, 236, 229, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 2px 15px 0px rgba(240, 236, 229, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+#mainImg {
+  margin: 40px;
+  width: 40%;
+  transform: translatey(0px);
+  animation: float 4s ease-in-out infinite;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 2px 0px rgba(240, 236, 229, 0.6);
+  background-color: white;
+}
+
+#home .btn{
+  margin-top: 40px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+
+#aboutMe .icon{
+  width: 2rem;
+  height: 2rem;
+  margin-top: 10px;
+  margin-right: 10px;
+
+}
