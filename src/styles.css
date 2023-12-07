@@ -25,18 +25,97 @@ body {
   padding: 10px 20px;
 }
 
+
+/* ############# */
+/* NAV section */
+/* ############# */
+.mainNavBar {
+  background-color: #161a31;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.nav-link{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 /* ############# */
 /* Home section */
 /* ############# */
+#home{
+  text-align: center;
+  margin-top: 40px;
+}
+
 #mainHeader{
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   font-size: 4rem;
 }
 
+
+/* CSS to xs breakpoint */
+@media (max-width: 576px) {
+  #mainHeader{
+    font-size: 3rem;
+  }
+  .secondaryHeader{
+    font-size: 2rem;
+  }
+  #mainImg{
+    margin: 10px;
+    width: 60%;
+  }
+}
+
+/* CSS to s breakpoint */
+@media (min-width: 576px) {
+  #mainImg{
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+  }
+  #mainHeader{
+    font-size: 4rem;
+  }
+  .secondaryHeader{
+    font-size: 2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
+  #mainImg{
+    width: 70%;
+    height: 100%;
+    margin: 30px;
+  }
   #home{
     height: 500px;
+  }
+  #mainHeader{
+    font-size: 3rem;
+  }
+  .secondaryHeader{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #home{
+    height: 450px;
+  }
+  #mainImg{
+    margin: 30px;
+    width: 50%;
+  }
+  #mainHeader{
+    font-size: 4rem;
+  }
+  .secondaryHeader{
+    font-size: 3rem;
   }
 }
 
@@ -56,8 +135,6 @@ body {
 }
 
 #mainImg {
-  margin: 40px;
-  width: 40%;
   transform: translatey(0px);
   animation: float 4s ease-in-out infinite;
   box-sizing: border-box;

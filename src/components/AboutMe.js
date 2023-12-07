@@ -7,17 +7,16 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 function AboutMe() {
     return <Container>
         <Row id='home' className='p-4 align-items-center'>
-            <Col md={5} className='text-center p-2'>
+            <Col md={6} lg={5} className='p-2'>
                 <a href="https://www.flaticon.com/authors/amethystdesign" title="AmethystDesign"><img id="mainImg" src={devImage} /></a>           
             </Col>
-            <Col md={7} className='p-4'>
+            <Col md={6} lg={7} className='p-4'>
                 <h1 id="mainHeader">Hi, I'm Tony</h1>
                 <h2 className='secondaryHeader'>I'm a software developer</h2>
-                <Button variant="light" href={resume} download="Resume_Tony">Download Resume</Button>
-                <Button variant="secondary">Projects</Button>
-                
-                
-
+                <div className='centerButton'>
+                    <Button variant="light" href={resume} download="Resume_Tony">Resume</Button>
+                    <Button variant="secondary">Projects</Button>
+                </div>
             </Col>
         </Row>
         {/* <Row id='aboutMe' className='lightSection'>
