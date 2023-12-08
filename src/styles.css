@@ -2,6 +2,9 @@
 https://colorhunt.co/palette/161a3031304db6bbc4f0ece5
  */
 
+/* ####### */
+/* General */
+/* ####### */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -10,25 +13,41 @@ body {
   color: white;
 }
 
+p{
+  font-size: 1.1rem;
+}
+
 .lightSection {
   background-color: #F0ECE5;
   color: #161A30;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 100%;
 }
 
 .secondaryHeader{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  color: #B6BBC4;
   font-weight: 600;
   font-size: 2rem;
+}
+
+.lightSection .secondaryHeader{
+  color: #444444;
 }
 
 .btn {
   padding: 10px 20px;
 }
 
+.highlight{
+  color: #C70039;
+}
 
-/* ############# */
+
+/* ########### */
 /* NAV section */
-/* ############# */
+/* ########### */
 .mainNavBar {
   background-color: #161a31;
   position: fixed;
@@ -39,12 +58,13 @@ body {
 .nav-link{
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 18px;
 }
 
 
-/* ############# */
+/* ############ */
 /* Home section */
-/* ############# */
+/* ############ */
 #home{
   text-align: center;
   margin-top: 40px;
@@ -71,7 +91,7 @@ body {
   }
 }
 
-/* CSS to s breakpoint */
+/* CSS to sm breakpoint */
 @media (min-width: 576px) {
   #mainImg{
     width: 70%;
@@ -86,6 +106,7 @@ body {
   }
 }
 
+/* CSS to md breakpoint */
 @media (min-width: 768px) {
   #mainImg{
     width: 70%;
@@ -103,6 +124,7 @@ body {
   }
 }
 
+/* CSS to lg breakpoint */
 @media (min-width: 992px) {
   #home{
     height: 450px;
@@ -150,11 +172,32 @@ body {
   font-weight: 500;
 }
 
+/* ############### */
+/* Aboutme section */
+/* ############### */
+
+#aboutMe{
+  text-align: center;
+}
 
 #aboutMe .icon{
   width: 2rem;
   height: 2rem;
   margin-top: 10px;
   margin-right: 10px;
+  color: #31304D;
+  transition: 0.1s;
+}
 
+#aboutMe .icon:hover{
+  color: #C70039;
+  transition: 0.1s;
+}
+
+/* CSS to lg breakpoint */
+@media (min-width: 992px) {
+  #aboutMe{
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }
 }
