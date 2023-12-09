@@ -11,7 +11,7 @@ function MainNavBar() {
           <Nav className="m-auto" defaultActiveKey="#home" variant='underline'>
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#aboutMe">About me</Nav.Link>
-            <Nav.Link href="#project">Project</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#experience">Experience</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>

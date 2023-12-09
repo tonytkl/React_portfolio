@@ -41,7 +41,7 @@ p{
 }
 
 .highlight{
-  color: #C70039;
+  color: #9AD0C2;
 }
 
 
@@ -79,6 +79,9 @@ p{
 
 /* CSS to xs breakpoint */
 @media (max-width: 576px) {
+  #home{
+    height: 700px;
+  }
   #mainHeader{
     font-size: 3rem;
   }
@@ -93,6 +96,9 @@ p{
 
 /* CSS to sm breakpoint */
 @media (min-width: 576px) {
+  #home{
+    height: 900px;
+  }
   #mainImg{
     width: 70%;
     height: 100%;
@@ -114,7 +120,7 @@ p{
     margin: 30px;
   }
   #home{
-    height: 500px;
+    height: 700px;
   }
   #mainHeader{
     font-size: 3rem;
@@ -127,7 +133,7 @@ p{
 /* CSS to lg breakpoint */
 @media (min-width: 992px) {
   #home{
-    height: 450px;
+    height: 700px;
   }
   #mainImg{
     margin: 30px;
@@ -173,7 +179,7 @@ p{
 }
 
 /* ############### */
-/* Aboutme section */
+/* AboutMe section */
 /* ############### */
 
 #aboutMe{
@@ -184,13 +190,14 @@ p{
   width: 2rem;
   height: 2rem;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
   color: #31304D;
   transition: 0.1s;
 }
 
 #aboutMe .icon:hover{
-  color: #C70039;
+  color: #2D9596;
   transition: 0.1s;
 }
 
@@ -199,5 +206,6 @@ p{
   #aboutMe{
     padding-left: 15% !important;
     padding-right: 15% !important;
+    min-height: 500px;
   }
 }
