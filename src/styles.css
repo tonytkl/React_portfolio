@@ -28,6 +28,7 @@ p{
   color: #B6BBC4;
   font-weight: 600;
   font-size: 2rem;
+  margin-bottom: 30px;
 }
 .lightSection .secondaryHeader{
   color: #444444;
@@ -37,6 +38,10 @@ p{
 }
 .highlight{
   color: #9AD0C2;
+}
+.sections{
+  display: flex;
+  align-items: center;
 }
 .icon{
   transition: 0.1s;
@@ -68,7 +73,7 @@ p{
 /* Home section */
 /* ############ */
 #home{
-  margin-top: 40px;
+  padding-top: 61px;
 }
 #mainHeader{
   font-family: 'Roboto Mono', monospace;
@@ -193,7 +198,8 @@ p{
   #aboutMe{
     padding-left: 15% !important;
     padding-right: 15% !important;
-    min-height: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     align-items: center;
   }
 }
@@ -228,7 +234,8 @@ p{
   #projects{
     padding-left: 10% !important;
     padding-right: 10% !important;
-    min-height: 550px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     align-items: center;
   }
 }

@@ -3,8 +3,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import resume from '../document/Resume_SoftwareDeveloper.pdf';
 
 function Home() {
-    return <Container>
-        <Row id='home' className='p-4 align-items-center'>
+    return <Container id='home' className='sections' >
+        <Row className='p-4 align-items-center'>
             <Col md={6} lg={5} className='p-2'>
                 <a href="https://www.flaticon.com/authors/amethystdesign" title="AmethystDesign"><img id="mainImg" src={profileImg} /></a>
             </Col>

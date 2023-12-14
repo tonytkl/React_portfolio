@@ -28,7 +28,7 @@ function Projects() {
         })
     };
 
-    return <Container id="projects">
+    return <Container id="projects" className="sections">
         <Row className='p-5 justify-content-md-center'>
         <h2 className='secondaryHeader'>Projects</h2>
             {projects.length > 0 && renderProjects(projects)}
