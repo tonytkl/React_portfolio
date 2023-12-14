@@ -13,7 +13,7 @@ function Home() {
                 <h2 className='secondaryHeader'>I'm a software developer</h2>
                 <div className='centerButton'>
                     <Button variant="light" href={resume} download="Resume_Tony">Resume</Button>
-                    <Button variant="secondary">Projects</Button>
+                    <Button variant="secondary" href={"#projects"}>Projects</Button>
                 </div>
             </Col>
         </Row>

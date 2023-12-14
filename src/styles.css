@@ -11,12 +11,11 @@ body {
   font-weight: 300;
   background-color: #161A30;
   color: white;
+  text-align: center;
 }
-
 p{
   font-size: 1.1rem;
 }
-
 .lightSection {
   background-color: #F0ECE5;
   color: #161A30;
@@ -24,24 +23,27 @@ p{
   margin-right: 0;
   min-width: 100%;
 }
-
 .secondaryHeader{
   font-family: 'Work Sans', sans-serif;
   color: #B6BBC4;
   font-weight: 600;
   font-size: 2rem;
 }
-
 .lightSection .secondaryHeader{
   color: #444444;
 }
-
 .btn {
   padding: 10px 20px;
 }
-
 .highlight{
   color: #9AD0C2;
+}
+.icon{
+  transition: 0.1s;
+}
+.icon:hover{
+  color: #2D9596 !important; 
+  transition: 0.1s;
 }
 
 
@@ -66,16 +68,13 @@ p{
 /* Home section */
 /* ############ */
 #home{
-  text-align: center;
   margin-top: 40px;
 }
-
 #mainHeader{
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   font-size: 4rem;
 }
-
 
 /* CSS to xs breakpoint */
 @media (max-width: 576px) {
@@ -161,7 +160,6 @@ p{
     transform: translatey(0px);
   }
 }
-
 #mainImg {
   transform: translatey(0px);
   animation: float 4s ease-in-out infinite;
@@ -171,7 +169,6 @@ p{
   box-shadow: 0 5px 2px 0px rgba(240, 236, 229, 0.6);
   background-color: white;
 }
-
 #home .btn{
   margin-top: 40px;
   margin-right: 20px;
@@ -182,10 +179,6 @@ p{
 /* AboutMe section */
 /* ############### */
 
-#aboutMe{
-  text-align: center;
-}
-
 #aboutMe .icon{
   width: 2rem;
   height: 2rem;
@@ -193,12 +186,6 @@ p{
   margin-right: 15px;
   margin-left: 15px;
   color: #31304D;
-  transition: 0.1s;
-}
-
-#aboutMe .icon:hover{
-  color: #2D9596;
-  transition: 0.1s;
 }
 
 /* CSS to lg breakpoint */
@@ -206,6 +193,42 @@ p{
   #aboutMe{
     padding-left: 15% !important;
     padding-right: 15% !important;
-    min-height: 500px;
+    min-height: 450px;
+    align-items: center;
+  }
+}
+
+/* ################ */
+/* Projects section */
+/* ################ */
+
+.card{
+  background-color: #435585;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+}
+.cardImg{
+  margin: 5px;
+  height: 60px;
+  object-fit: contain;
+}
+.card-subtitle{
+  color: #B6BBC4;
+}
+.card-link .icon{
+  color: #F0ECE5;
+  font-weight: 600;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* CSS to lg breakpoint */
+@media (min-width: 992px) {
+  #projects{
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    min-height: 550px;
+    align-items: center;
   }
 }

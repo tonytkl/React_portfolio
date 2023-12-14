@@ -1,0 +1,33 @@
+{
+    "projects":
+    [
+        {
+            "title": "TaskSnap",
+            "image": "taskSnap.png",
+            "subTitle": "A simple task management app",
+            "text" : "A simple to-do app built with React and Bootstrap. It allows users to add, edit, and delete tasks. It also allows users to mark tasks as completed.",
+            "link": [
+                {
+                    "name": "production",
+                    "url": "https://react-task-snap.vercel.app/"
+                },
+                {
+                    "name": "github",
+                    "url": "https://github.com/tonytkl/React_taskSnap"
+                }
+            ]
+        },
+        {
+            "title": "ETL grabsheet",
+            "image": "etl.png",
+            "subTitle": "Data transforming process",
+            "text" : "The project is based on real business case of spreadsheet transforming. By implementing the ETL process, the project is able to transform the data from the original spreadsheet to the desired format, shorten the manual work process by 4 hours per data set.",
+            "link": [
+                {
+                    "name": "github",
+                    "url": "https://github.com/tonytkl/etl_grabSheet"
+                }
+            ]
+        }
+    ]
+}
