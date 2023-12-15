@@ -239,3 +239,10 @@ p{
     align-items: center;
   }
 }
+
+/* ###### */
+/* Footer */
+/* ###### */
+footer p{
+  font-size: small;
+}
