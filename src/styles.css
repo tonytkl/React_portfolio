@@ -42,6 +42,7 @@ p{
 .sections{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .icon{
   transition: 0.1s;
@@ -193,16 +194,6 @@ p{
   color: #31304D;
 }
 
-/* CSS to lg breakpoint */
-@media (min-width: 992px) {
-  #aboutMe{
-    padding-left: 15% !important;
-    padding-right: 15% !important;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-items: center;
-  }
-}
 
 /* ################ */
 /* Projects section */
@@ -229,9 +220,41 @@ p{
   height: 1.5rem;
 }
 
+
+/* ################### */
+/* Experiences section */
+/* ################### */
+
+#experiences{
+  justify-content: center;
+}
+#experiences img{
+  width: 80%;
+  border-radius: 5px;
+  margin: 30px;
+}
+#experiences .experienceContent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#experiences hr { 
+  width: 100%;
+}
+#experiences li{
+  text-align: left;
+}
+
+
+
+/* #################################### */
+/* CSS on lg breakpoint of each section */
+/* #################################### */
+
 /* CSS to lg breakpoint */
 @media (min-width: 992px) {
-  #projects{
+  #aboutMe, #projects, #experiences{
     padding-left: 10% !important;
     padding-right: 10% !important;
     padding-top: 50px;

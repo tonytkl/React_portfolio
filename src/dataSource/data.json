@@ -29,5 +29,20 @@
                 }
             ]
         }
-    ]
+    ],
+    "experiences":
+        [
+            {
+                "title": "Data Engineer",
+                "company": "The Red Carbon",
+                "date": "Jan 2022 - Nov 2022",
+                "jobDescription": [
+                    "Created an automated system in downloading reports from customers’ ERP system using Selenium library then aggregate data and publish report in Google Sheets. Reducing manual report building time by more than 40%.",
+                    "Created data warehouse using Postgres for a customer by implementing automated ETL process, collecting data from 3 sources (Oracle and Microsoft SQL). Reducing wait time in data requesting and improve project pace by at least 1 day per request.",
+                    "Maintained a data pipeline of a high-volume data dashboard about user’s behavior on a website with Python. The implemented system can update data every 4 hours, provided near-real-time status."
+                ],
+                "logo": "theRedCarbon.jpg",
+                "url": "https://www.theredcarbon.com/"
+            }
+        ]
 }
