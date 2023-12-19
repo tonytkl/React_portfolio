@@ -18,6 +18,7 @@ function Experiences() {
                                 <Col md={8} className="experienceContent">
                                     <Card.Title>{experience.title}</Card.Title>
                                     <Card.Subtitle className="mb-2">{experience.company}</Card.Subtitle>
+                                    <Card.Subtitle className="mb-2">{experience.date}</Card.Subtitle>
                                     <hr/>
                                     <ul>
                                         {experience.jobDescription.map((job) => {
