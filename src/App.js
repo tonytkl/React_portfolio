@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Experiences from "./components/Experiences";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <Projects />
       <Experiences />
+      <Contact />
       <Footer />
     </div>
   );

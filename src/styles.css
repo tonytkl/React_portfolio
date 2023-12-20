@@ -246,7 +246,21 @@ p{
   text-align: left;
 }
 
-
+/* ############### */
+/* Contact section */
+/* ############### */
+#contact input, #contact textarea{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#contact textarea{
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 /* #################################### */
 /* CSS on lg breakpoint of each section */
@@ -254,7 +268,7 @@ p{
 
 /* CSS to lg breakpoint */
 @media (min-width: 992px) {
-  #aboutMe, #projects, #experiences{
+  #aboutMe, #projects, #experiences, #contact{
     padding-left: 10% !important;
     padding-right: 10% !important;
     padding-top: 50px;
