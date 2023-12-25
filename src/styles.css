@@ -263,6 +263,31 @@ p{
 }
 
 /* #################################### */
+/* CSS on xs breakpoint of each section */
+/* #################################### */
+
+/* CSS to xs breakpoint */
+@media (max-width: 576px) {
+  .row{
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  .card{
+    /* padding: 5px; */
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .card img{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .card .row{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* #################################### */
 /* CSS on lg breakpoint of each section */
 /* #################################### */
 
