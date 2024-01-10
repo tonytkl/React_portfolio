@@ -1,99 +1,121 @@
-/* Color theme
-https://colorhunt.co/palette/161a3031304db6bbc4f0ece5
- */
+:root {
+  /* Background color */
+  --dark-main-background-color: #161a30;
+  --dark-secondary-background-color: #31304d;
+  --light-main-background-color: #f0ece5;
+
+  /* Text color */
+  --name-color: #9ad0c2;
+  --dark-main-text-color: #f0ece5;
+  --dark-secondary-text-color: #b6bbc4;
+  --light-main-text-color: #161a30;
+  --light-secondary-text-color: #444444;
+
+  /* Icon color */
+  --dark-icon-color: #f0ece5;
+  --light-icon-color: #31304d;
+  --icon-hover-color: #2d9596;
+
+  /* Background color for main image */
+  --main-img-background-color: white;
+
+  /* Card color */
+  --card-color: #435585;
+}
 
 /* ####### */
 /* General */
 /* ####### */
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  background-color: #161A30;
-  color: white;
+  background-color: var(--dark-main-background-color);
+  color: var(--dark-main-text-color);
   text-align: center;
 }
-p{
+p {
   font-size: 1.1rem;
 }
 .lightSection {
-  background-color: #F0ECE5;
-  color: #161A30;
+  background-color: var(--light-main-background-color);
+  color: var(--light-main-text-color);
   margin-left: 0;
   margin-right: 0;
   min-width: 100%;
 }
-.secondaryHeader{
-  font-family: 'Work Sans', sans-serif;
-  color: #B6BBC4;
+.secondaryHeader {
+  font-family: "Work Sans", sans-serif;
+  color: var(--dark-secondary-text-color);
   font-weight: 600;
   font-size: 2rem;
   margin-bottom: 30px;
 }
-.lightSection .secondaryHeader{
-  color: #444444;
+.lightSection .secondaryHeader {
+  color: var(--light-secondary-text-color);
 }
 .btn {
   padding: 10px 20px;
 }
-.highlight{
-  color: #9AD0C2;
+.highlight {
+  color: var(--name-color);
 }
-.sections{
+.sections {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.icon{
+.icon {
   transition: 0.1s;
 }
-.icon:hover{
-  color: #2D9596 !important; 
+.icon:hover {
+  color: var(--icon-hover-color) !important;
   transition: 0.1s;
 }
-
 
 /* ########### */
 /* NAV section */
 /* ########### */
 .mainNavBar {
-  background-color: #161a31;
+  background-color: var(--dark-main-background-color);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
 }
-.nav-link{
+.nav-link {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 18px;
 }
-
+.navbar-toggler {
+  border: none;
+}
 
 /* ############ */
 /* Home section */
 /* ############ */
-#home{
+#home {
   padding-top: 61px;
 }
-#mainHeader{
-  font-family: 'Roboto Mono', monospace;
+#mainHeader {
+  font-family: "Roboto Mono", monospace;
   font-weight: 700;
   font-size: 4rem;
 }
 
 /* CSS to xs breakpoint */
 @media (max-width: 576px) {
-  #home{
+  #home {
     height: 700px;
   }
-  #mainHeader{
+  #mainHeader {
     font-size: 3rem;
   }
-  .secondaryHeader{
+  .secondaryHeader {
     font-size: 2rem;
   }
-  #mainImg{
+  #mainImg {
     margin: 10px;
     width: 60%;
   }
@@ -101,53 +123,53 @@ p{
 
 /* CSS to sm breakpoint */
 @media (min-width: 576px) {
-  #home{
+  #home {
     height: 900px;
   }
-  #mainImg{
+  #mainImg {
     width: 70%;
     height: 100%;
     margin: 20px;
   }
-  #mainHeader{
+  #mainHeader {
     font-size: 4rem;
   }
-  .secondaryHeader{
+  .secondaryHeader {
     font-size: 2.5rem;
   }
 }
 
 /* CSS to md breakpoint */
 @media (min-width: 768px) {
-  #mainImg{
+  #mainImg {
     width: 70%;
     height: 100%;
     margin: 30px;
   }
-  #home{
+  #home {
     height: 700px;
   }
-  #mainHeader{
+  #mainHeader {
     font-size: 3rem;
   }
-  .secondaryHeader{
+  .secondaryHeader {
     font-size: 2rem;
   }
 }
 
 /* CSS to lg breakpoint */
 @media (min-width: 992px) {
-  #home{
+  #home {
     height: 700px;
   }
-  #mainImg{
+  #mainImg {
     margin: 30px;
     width: 50%;
   }
-  #mainHeader{
+  #mainHeader {
     font-size: 4rem;
   }
-  .secondaryHeader{
+  .secondaryHeader {
     font-size: 3rem;
   }
 }
@@ -173,9 +195,9 @@ p{
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 5px 2px 0px rgba(240, 236, 229, 0.6);
-  background-color: white;
+  background-color: var(--main-img-background-color);
 }
-#home .btn{
+#home .btn {
   margin-top: 40px;
   margin-right: 20px;
   font-weight: 500;
@@ -185,78 +207,77 @@ p{
 /* AboutMe section */
 /* ############### */
 
-#aboutMe .icon{
+#aboutMe .icon {
   width: 2rem;
   height: 2rem;
   margin-top: 10px;
   margin-right: 15px;
   margin-left: 15px;
-  color: #31304D;
+  color: var(--light-icon-color);
 }
-
 
 /* ################ */
 /* Projects section */
 /* ################ */
 
-.card{
-  background-color: #435585;
+.card {
+  background-color: var(--card-color);
   padding: 10px;
   align-items: center;
   margin: 10px;
 }
-.cardImg{
+.cardImg {
   margin: 5px;
   height: 60px;
   object-fit: contain;
 }
-.card-subtitle{
-  color: #B6BBC4;
+.card-subtitle {
+  color: var(--dark-secondary-text-color);
 }
-.card-link .icon{
-  color: #F0ECE5;
+.card-link .icon {
+  color: var(--dark-icon-color);
   font-weight: 600;
   width: 1.5rem;
   height: 1.5rem;
 }
 
-
 /* ################### */
 /* Experiences section */
 /* ################### */
 
-#experiences{
+#experiences {
   justify-content: center;
 }
-#experiences img{
+#experiences img {
   width: 80%;
   border-radius: 5px;
   margin: 30px;
 }
-#experiences .experienceContent{
+#experiences .experienceContent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
-#experiences hr { 
+#experiences hr {
   width: 100%;
 }
-#experiences li{
+#experiences li {
   text-align: left;
 }
 
 /* ############### */
 /* Contact section */
 /* ############### */
-#contact input, #contact textarea{
+#contact input,
+#contact textarea {
   display: block;
   width: 100%;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
 }
-#contact textarea{
+#contact textarea {
   height: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -268,20 +289,20 @@ p{
 
 /* CSS to xs breakpoint */
 @media (max-width: 576px) {
-  .row{
+  .row {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
-  .card{
+  .card {
     /* padding: 5px; */
     margin-left: 0px;
     margin-right: 0px;
   }
-  .card img{
+  .card img {
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
-  .card .row{
+  .card .row {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -293,7 +314,10 @@ p{
 
 /* CSS to lg breakpoint */
 @media (min-width: 992px) {
-  #aboutMe, #projects, #experiences, #contact{
+  #aboutMe,
+  #projects,
+  #experiences,
+  #contact {
     padding-left: 10% !important;
     padding-right: 10% !important;
     padding-top: 50px;
@@ -305,6 +329,6 @@ p{
 /* ###### */
 /* Footer */
 /* ###### */
-footer p{
+footer p {
   font-size: small;
 }
