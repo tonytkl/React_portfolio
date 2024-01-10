@@ -1,48 +1,52 @@
 {
-    "projects":
-    [
+  "home": {
+    "name": "Tony",
+    "title": "Software Developer",
+    "image": "profile.png",
+    "resume": "Resume_SoftwareDeveloper.pdf"
+  },
+  "projects": [
+    {
+      "title": "TaskSnap",
+      "image": "taskSnap.png",
+      "subTitle": "A simple task management app",
+      "text": "A simple to-do app built with React and Bootstrap. It allows users to add, edit, and delete tasks. It also allows users to mark tasks as completed.",
+      "link": [
         {
-            "title": "TaskSnap",
-            "image": "taskSnap.png",
-            "subTitle": "A simple task management app",
-            "text" : "A simple to-do app built with React and Bootstrap. It allows users to add, edit, and delete tasks. It also allows users to mark tasks as completed.",
-            "link": [
-                {
-                    "name": "production",
-                    "url": "https://react-task-snap.vercel.app/"
-                },
-                {
-                    "name": "github",
-                    "url": "https://github.com/tonytkl/React_taskSnap"
-                }
-            ]
+          "name": "production",
+          "url": "https://react-task-snap.vercel.app/"
         },
         {
-            "title": "ETL grabsheet",
-            "image": "etl.png",
-            "subTitle": "Data transforming process",
-            "text" : "The project is based on real business case of spreadsheet transforming. By implementing the ETL process, the project is able to transform the data from the original spreadsheet to the desired format, shorten the manual work process by 4 hours per data set.",
-            "link": [
-                {
-                    "name": "github",
-                    "url": "https://github.com/tonytkl/etl_grabSheet"
-                }
-            ]
+          "name": "github",
+          "url": "https://github.com/tonytkl/React_taskSnap"
         }
-    ],
-    "experiences":
-        [
-            {
-                "title": "Data Engineer",
-                "company": "The Red Carbon",
-                "date": "Jan 2022 - Nov 2022",
-                "jobDescription": [
-                    "Created an automated system in downloading reports from customers’ ERP system using Selenium library then aggregate data and publish report in Google Sheets. Reducing manual report building time by more than 40%.",
-                    "Created data warehouse using Postgres for a customer by implementing automated ETL process, collecting data from 3 sources (Oracle and Microsoft SQL). Reducing wait time in data requesting and improve project pace by at least 1 day per request.",
-                    "Maintained a data pipeline of a high-volume data dashboard about user’s behavior on a website with Python. The implemented system can update data every 4 hours, provided near-real-time status."
-                ],
-                "logo": "theRedCarbon.jpg",
-                "url": "https://www.theredcarbon.com/"
-            }
-        ]
+      ]
+    },
+    {
+      "title": "ETL grabsheet",
+      "image": "etl.png",
+      "subTitle": "Data transforming process",
+      "text": "The project is based on real business case of spreadsheet transforming. By implementing the ETL process, the project is able to transform the data from the original spreadsheet to the desired format, shorten the manual work process by 4 hours per data set.",
+      "link": [
+        {
+          "name": "github",
+          "url": "https://github.com/tonytkl/etl_grabSheet"
+        }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Data Engineer",
+      "company": "The Red Carbon",
+      "date": "Jan 2022 - Nov 2022",
+      "jobDescription": [
+        "Created an automated system in downloading reports from customers’ ERP system using Selenium library then aggregate data and publish report in Google Sheets. Reducing manual report building time by more than 40%.",
+        "Created data warehouse using Postgres for a customer by implementing automated ETL process, collecting data from 3 sources (Oracle and Microsoft SQL). Reducing wait time in data requesting and improve project pace by at least 1 day per request.",
+        "Maintained a data pipeline of a high-volume data dashboard about user’s behavior on a website with Python. The implemented system can update data every 4 hours, provided near-real-time status."
+      ],
+      "logo": "theRedCarbon.jpg",
+      "url": "https://www.theredcarbon.com/"
+    }
+  ]
 }
