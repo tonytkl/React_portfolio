@@ -5,6 +5,19 @@
     "image": "profile.png",
     "resume": "Resume_SoftwareDeveloper.pdf"
   },
+  "aboutMe": {
+    "text": "My name is Tony Klinpon. I am a computer programming student at Humber college. I have some specialty in front-end developing using ReactJS and would love to explore in the back-end programming as well. I also have professional experience on data warehouse and ETL management.",
+    "link": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/tony-klinpon/"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/tonytkl"
+      }
+    ]
+  },
   "projects": [
     {
       "title": "TaskSnap",
