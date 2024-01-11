@@ -22,11 +22,15 @@ Another point to note is that I prepare the icon for Instagram, Linkedin, Twitch
 
 Feel free to change the color theme of the website. The color theme is located at `src/styles,css`. You can change the color of the website by changing the value of the variables.
 
-### 4. Change the favicon and tags in HTML
+### 4.Replace the resume
+
+The resume is located at `src/document` folder. Don't forget to change the name of the resume in the `aboutMe` section of the JSON file.
+
+### 5. Change the favicon and tags in HTML
 
 There is some meta tags and favicon that you might want to change. They are located at `public/index.html`.
 
-### 5. Register emailing template with EmailJS
+### 6. Register emailing template with EmailJS
 
 To make the contact section work, you need to register an account with [EmailJS](https://www.emailjs.com/). Once you have registered, you need to create an email template. The credentials require in this template are:
 
