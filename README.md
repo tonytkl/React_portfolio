@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Welcme to my portfolio website!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built with React and enchanced responsiveness with Bootstrap. It is a single page application that showcases my skills and projects. It also has a contact form that allows users to send me a message.
 
-## Available Scripts
+The project was developed due to the reason that I could not find any simple and clean portfolio website that I liked. Now that I have built one, I want to share it with everyone! Feel free to use it as a template for your own portfolio website. All I ask is that you give me credit for the design and code.
 
-In the project directory, you can run:
+The content of the website is done through JSON files. This allows for easy editing of the content without having to touch the code. The JSON files are located in the `src/dataSource` folder.
 
-### `npm start`
+## Step to use this project as a template after cloning the repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Change main profile picture
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+All images used in the project is located at `src/images`. Feel free to replace the `profile.jpg` with your own profile picture.
 
-### `npm test`
+### 2. Change the content
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Content of all sections can be found in the `src/dataSource` folder. The content is separated into different key of the JSON file for each section. Note that if the content is wrapped in the array, it means that the content is a list of items. For example, the `link` in `aboutMe` section is a list of links. You can add as many links as you want.
 
-### `npm run build`
+Another point to note is that I prepare the icon for Instagram, Linkedin, Twitch, and Github. If you want to add more icon, feel free to explore from [FontAwesome](https://fontawesome.com/icons).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Change the color theme
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Feel free to change the color theme of the website. The color theme is located at `src/styles,css`. You can change the color of the website by changing the value of the variables.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 4. Change the favicon and tags in HTML
 
-### `npm run eject`
+There is some meta tags and favicon that you might want to change. They are located at `public/index.html`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 5. Register emailing template with EmailJS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To make the contact section work, you need to register an account with [EmailJS](https://www.emailjs.com/). Once you have registered, you need to create an email template. The credentials require in this template are:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `SERVICE_ID`
+- `TEMPLATE_ID`
+- `PUBLIC_KEY`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Put all those credentials in the environment file `.env` at the root of the project. You can find the template ID in the EmailJS dashboard. The service ID and public key can be found in the EmailJS dashboard under the integration tab. If you are not sure how to do this, you can follow the instruction [here](https://www.emailjs.com/docs/tutorial/overview/). In case you want to publish the website, don't forget to add the value of these credentials to the environment variable in the hosting platform.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+And you are done! You can now deploy the website to your favorite hosting platform. Enjoy!
